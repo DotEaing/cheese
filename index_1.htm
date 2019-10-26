@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/comm.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+    <style>
+        .carousel-control-prev,
+        .carousel-control-next{
+            width:4%;height:20%;
+            top:40%;
+            border-radius: 0.25rem;
+            background-color:#aaa;
+        }
+
+
+        .carousel-indicators li{
+            width:0.6rem;height:0.3rem;
+            border-radius: 50%;
+            background-color:#fff;
+            margin-left:0.2rem;
+            margin-right:0.2rem;
+        }
+
+        .carousel-indicators .active{
+            background-color: #0aa1ed;
+        }
+
+        .title_font{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #666;
+            margin-left:0.25rem ;
+
+        }
+
+        .border-bottom{
+            border-width: 3px !important;
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.5rem;
+
+        }
+
+       .L_height_1,.L_height_2{
+           background-color: #e8e8e8;
+
+       }
+
+       .w-35{width: 35%;}
+
+       .L_height_1::before{
+           content: "";
+           display: table;
+       }
+
+       .L_height_1{
+           height: 377px;
+        }
+
+        .L_height_2{
+           height: 233px;
+        }
+
+        /* .row>div{
+            border: #0aa1ed  2px solid;
+        } */
+
+        .img_position_1{
+            margin-right: 25px;
+            margin-top: -225px;
+            transition: 1s;
+
+        }
+        .img_position_1:hover{
+            transform: scale(1.1)
+        }
+
+
+
+    </style>
+</head>
+<body class="bg-light">
+<!-- 头部 -->
+    <header>
+    <iframe src="header.htm" class="w-100 md-lg-15" frameborder="0" scrolling="no"></iframe>
+    </header>
+
+<!-- 轮播图 -->
+    <div class="container px-0 ">
+        <div id="demo" class="carousel " data-ride="carousel" >
+            <!-- 轮播图片 -->
+            <div class="carousel-inner" >
+                <div class="carousel-item  text-center active">
+                    <img src="./img/carousel/banner1.png" class="w-100" alt="">
+                </div>
+                <div class="carousel-item text-center ">
+                    <img src="./img/carousel/banner2.png" class="w-100" alt="">
+                </div>
+                <div class="carousel-item text-center ">
+                    <img src="./img/carousel/banner3.png" class="w-100" alt="">
+                </div>
+                <div class="carousel-item text-center ">
+                    <img src="./img/carousel/banner4.png" class="w-100" alt="">
+                </div>
+            </div>
+
+            <!-- 左右箭头 -->
+                <a href="#demo" class="carousel-control-prev" data-slide="prev">
+                    <span class="carousel-control-prev-icon w-50"></span>
+                </a>
+                <a href="#demo" class="carousel-control-next" data-slide="next">
+                    <span class="carousel-control-next-icon w-50"></span>
+                </a>
+            
+            <!-- 轮播指示器 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+
+        </div>
+    </div>
+
+<!-- 主体 -->
+<!-- F1 -->
+<div class="container px-0">
+    <!-- name -->
+    <div class="border-bottom mt-4">
+        <img src="./img/index/computer_icon.png" alt="" srcset="">
+        <span class="title_font">首页推荐/1F</span>
+    </div>
+
+    <!-- frame -->
+    <div class="row mx-0">
+        <div class="col-lg-7 col-md-12 px-0">
+            <div class="L_height_1 mr-lg-2 mr-md-0 mb-2">
+                <div class="card bg-transparent border-0 w-35 mt-5 ml-5">
+                    <h3 >Apple MacBook Air系列</h3>
+                    <h6 class="font-small text-muted">酷睿双核i5处理器|256GB SSD|8GB内存|英特尔HD显卡620含共享显卡内存</h6>
+                    <span class=" text-primary mb-3 h3">￥6988.00</span>
+                    <a href="" class="btn btn-primary w-75">查询详情</a>
+                </div>
+                <img class="float-right img_position_1" src="./img/index/study_computer_img1.png" alt="" srcset="">
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-12 px-0">
+            <div class="L_height_1 mr-lg-0 mr-md-0 mb-2">
+
+            
+                </div>
+        </div>
+        <div class="col-lg-5 col-md-12 px-0">
+            <div class=" L_height_2 mr-lg-2 mb-2 mr-md-0">
+
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-12 px-0 ">
+            <div class="row mx-0">
+                <div class="col-4 px-0">
+                    <div class=" L_height_2 mr-2">
+
+                    </div>
+                </div>
+                <div class="col-4 px-0">
+                    <div class=" L_height_2  mr-2">
+
+                    </div>
+                </div>
+                <div class="col-4 px-0">
+                    <div class=" L_height_2 mr-lg-0 ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 尾部 -->
+    <footer>
+        <iframe src="footer.htm" class="w-100" frameborder="0" scrolling="no" style="height: 400px"></iframe>
+    </footer>
+
+
+</body>
+</html>
